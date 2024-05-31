@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 export const FrontPage = () => {
     return(
         <section className="top-cover column">
-            <video autoPlay muted loop playsInline>
+            <video autoPlay muted loop playsInline controls>
                 <source src={video} type="video/mp4"/>
             </video>
             <h2>Welcome to <span className="outlined-words">&nbsp;YOUR FIT&nbsp;</span></h2>
