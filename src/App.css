@@ -1,38 +1,1527 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "Poppins", sans-serif;
+    color:#ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section {
+    padding: 90px 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.top-cover {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.outlined-words {
+    font-size: 35px;
+    color: #d508e7;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: none;
+    text-shadow:  20px 20px 60px #a406b2, -10px -10px 60px #ff0aff;
+}
+
+h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 22px 0px 60px;
+}
+
+.plus {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #bfbfbf;
+    margin-bottom: 60px;
+}
+
+.cta {
+    color: #ffffff;
+    border: 2px solid #d508e7;
+    background: linear-gradient(to bottom, #d508e7, #780090);
+    height: 60px;
+    width: 250px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cta:hover {
+    background: #b707c6;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.benefits {
+    background-color: #202020;
+    padding: 50px 90px 90px;
+}
+
+.homePageClasses, .all-classes, .timetable, .faqs {
+    background-color: #202020;
+}
+
+.benefit {
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.benefit-icon {
+    color:#d508e7;
+    font-size: 110px;
+    height: 110px;
+    margin-bottom: 0;
+}
+
+.benefit-heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;;
+}
+
+.upper {
+    margin-top: 20px;
+}
+
+.benefit-explanation {
+    color: #949ea2;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.announcement {
+    padding: 0;
+    background: #202020;
+    overflow: hidden;
+    border: none;
+}
+
+.scrolling-text {
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    color: transparent;
+    -webkit-text-stroke: 1px #bfbfbf;
+    font-size: 70px;
+    font-family: "Poppins", sans-serif;
+    animation: scrolling 20s infinite normal linear;
+}
+
+@keyframes scrolling {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.start-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: 7px;
+}
+
+.outlined {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    text-transform: uppercase;
+}
+
+.pink {
+    color:#d508e7;
+    font-weight: 700;
+}
+
+.description {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    width: 70%;
+    margin: 20px 0px 50px 7px;
+}
+
+.learn-more {
+    margin: 30px 0px 0px 7px;
+}
+
+.homePageCoaches {
+    background-color: #ffffff;
+}
+
+.black {
+    color:#202020;
+}
+
+.border-black {
+    -webkit-text-stroke: 3px #202020;
+}
+
+.coach-card, .classesBtnGroup {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.coach-photo {
+    width: 300px;
+    height: 450px;
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.coach-photo:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.coach-name, .specialization {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    color:#202020;
+    text-transform: uppercase;
+}
+
+.coach-name {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.gap {
+    gap: 15px;
+}
+
+.special-offer {
+    background-image: url("./assets/parallax.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.offer-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px #000;
+    margin-bottom: 0;
+}
+
+.offer-subheading {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.our-team {
+    background: #ffffff;
+}
+
+.top-photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+.coaches-topPhoto {
+    background-image: url("./assets//COACHES/back.jpg");
+}
+
+.classes-topPhoto {
+    background-image: url("./assets//classes-back.jpg");
+}
+
+.shopItems-topPhoto {
+    background-image: url("./assets//SHOP/shop-cover.jpg");
+}
+
+.timetable-topPhoto {
+    background-image: url("./assets//timetable-cover.jpg");
+}
+
+.faqs-topPhoto {
+    background-image: url("./assets//faqs-cover.jpg");
+}
+
+.promos-topPhoto {
+    background-image: url("./assets//PROMOS/promos-cover.jpg");
+}
+
+.topPhoto-cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topPhoto-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.topPhoto-subheading {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.point {
+    padding: 5px;
+    flex-grow: 1;
+    flex-basis: 16%;
+    margin: 10px 15px;
+    background: #ffffff;
+}
+
+.classesBtnGroup {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filtered-classes {
+    width: 110px;
+    height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #202020;
+    border: 1px solid #202020;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;  
+}
+
+.filtered-classes:hover {
+    color: #ffffff;
+    background-color: #202020;
+}
+
+.detailedCoachInfo, .detailedClasses-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 250px;
+}
+
+.detailedClasses-heading {
+    padding: 0px 200px;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.detailed-coach {
+    padding: 120px 0px 50px;
+    color:#202020;
+}
+
+.aboutCoach-photo {
+    width: 350px;
+    height: 520px;
+}
+
+.directions {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color:#848482;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+.star-icon {
+    color:#d508e7;
+    font-size: 18px;
+}
+
+.detailedInfo {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.moto {
+    position: absolute;
+    top: 430px;
+    right: 0px;
+    color:#ffffff;
+    background-color: #d508e7;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.back {
+    background-color: #202020;
+    padding-bottom: 50px;
+}
+
+.coaches-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.class-photo {
+    width: 300px;
+    height: 300px;
+    filter: brightness(80%);
+    transition: all 0.5s ease-in-out;
+}
+
+.class-photo:hover, .promo-image:hover {
+    transform: scale(1.1);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.filter-class {
+    margin: 10px 40px 50px;
+}
+
+.class-card {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.classCard-inner, .photo-moto, .realtive {
+    position: relative;
+}
+
+.class-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 3px 3px 12px #000;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.right-arrow {
+    font-size: 30px;
+    text-shadow: 3px 3px 12px #000;
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    color:#d508e7;
+}
+
+.detailed-class {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailedClass-cover {
+    height: 100vh;
+}
+
+.width {
+    width: 100%;
+}
+
+.heading-cover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.detailedClassPhoto {
+    width: 410px;
+    height: 410px;
+    box-shadow:  1px 1px 5px #b507c4, -1px -1px 5px #f509ff;
+}
+
+.detailedClass-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #202020;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.class-explanation {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 25px 0px 50px;
+    text-shadow: 2px 2px 8px #202020;
+}
+
+.your-fit {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.studio {
+    background-color: #f509ff;
+    box-shadow: 2px 2px 5px #f509ff;
+    width: fit-content;
+    padding: 2px 10px;
+    text-shadow: 2px 2px 8px #202020;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.pros {
+    background-color: #000;
+    padding: 120px 200px 50px;
+}
+
+.time {
+    color:#d508e7;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    font-size: 60px;
+    margin-right: 7px;
+}
+
+.dash-icon {
+    font-size: 30px;
+    margin-right: 7px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    margin: 7px 0px;
+}
+
+.class-description {
+    background-color: #000;
+    padding: 0px 200px 30px;
+}
+
+.showMoreBtn {
+    border: none;
+    background-color: transparent;
+    color:#d508e7;
+    text-decoration: underline;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.low, .marginBottom {
+    margin-bottom: 40px;
+}
+
+.horizontal-line {
+    border: 1px solid #d508e7;
+    margin: 40px 50px 30px;
+    opacity: 1;
+}
+
+.left {
+    text-align: start;
+}
+
+.less {
+    padding: 0px 300px;
+}
+
+.categoryButton {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #202020;
+    background-color: #ffffff;  
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+.categoryBtnSelected, .categoryBtn:hover {
+    color: #ffffff;
+    background-color: #202020;
+}
+
+.categoryBtn {
+    color: #202020;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.item {
+    color: #202020;
+    width: 300px;
+    height: 510px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.item-image {
+    width: 100%;
+}
+
+.item-price {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.item-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.cart {
+    background: #ffffff;
+    color: #202020;
+    position: fixed;
+    margin: auto;
+    right: 0px;
+    top: 85px;
+    border: none;
+    box-shadow:  2px 2px 10px #bebebe, -2px -2px 10px #bebebe;
+    z-index: 99;
+    width: 370px;
+    font-family: "Poppins", sans-serif;
+    transform: translateX(105%);
+    transition: transform 0.6s ease;
+}
+
+.openCart {
+    transform: translateX(0);
+}
+
+.total-price, .discount-subheading {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.total-price {
+    margin-bottom: 0;
+}
+
+.all-cartItems {
+    overflow-y: scroll;
+    max-height: 47vh;
+    scrollbar-width: thin;
+    padding: 10px 20px;
+    scrollbar-color: #d508e7 #202020;
+}
+
+.font {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.itemPhotoInCart {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.itemInCart {
+    flex:2;
+}
+
+
+.addedQuantity {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 12px;
+}
+
+.trash-bin {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    cursor: pointer;
+    font-size: 19px;
+    color: #202020;
+    transition: all 0.3s ease-in-out;
+}
+
+.trash-bin:hover {
+    color: #d508e7;
+}
+
+.shopItem-container {
+    padding: 120px 250px 50px;
+}
+
+.itemImage-detailed {
+    width: 400px;
+    height: 600px;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.detailedItmes-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.detailedItem-name {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.detailedItem-price {
+    font-size: 22px;
+}
+
+.item-description {
+    color:#848482;
+    margin: 20px 0px 40px;
+}
+
+.btn {
+    --mdb-btn-font-size: 16px;
+}
+
+.addedItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.addDeleteBtn {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #202020;
+    background: #E5E4E2;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new {
+    position: absolute;
+    top: 15px;
+    left: -7px;
+    padding: 15px 50px;
+    font-size: 14px;
+    background-color: #d46adb;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+}
+
+.item-tabs {
+    margin: 80px 0px 50px;
+}
+
+.hr-tabs {
+    border: 1px solid #cdcdcd;
+    margin: 25px 0px 0px;
+}
+
+.shoppingBag-icon {
+    font-size: 24px;
+    margin-right: 7px;
+}
+
+.cart-topLine {
+    background-color: #202020;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.flex-relative {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-top {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+}
+
+.closeCart-icon {
+    font-size: 25px;
+    position: absolute;
+    top:  17px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.itemNameInCart {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.items-number {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.itemTotalPrice {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.pricing {
+    background-color: #202226;
+    padding: 70px 0px 50px;
+}
+
+.discount {
+    background-image: url("../src/assets/discount.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.discount-cover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    padding: 0px 10px;
+}
+
+.fifteen-container {
+    padding: 5px 20px;
+    background-color: #b507c4;
+    margin: 25px 0px 15px;
+    box-shadow: 2px 2px 10px #a406b2, -2px -2px 10px #a406b2;
+}
+
+.prices-container {
+    padding: 60px 200px;
+    background-color: #202226;
+    color:#ffffff;
+    width: 100%;
+}
+
+.unlimited {
+    background-color: #ffffff;
+    color:#202226;
+}
+
+.prices-hr {
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin: 30px 0px 20px;
+    opacity: 1;
+}
+
+.unlimited-hr {
+    border: 1px solid #202226;
+}
+
+.wide-hr {
+    border: 5px solid #ffffff;
+    width: 100%;
+    opacity: 1;
+}
+
+.unlimitedWide-hr {
+    border: 5px solid #202226;
+}
+
+.new-sign {
+    margin-bottom: 0;
+}
+
+.priceClasses-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.unlimitedPriceClasses-vertical {
+    margin-top: 42px;
+}
+
+.trainings {
+    font-size: 90px;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.filter-icon {
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.pink-back {
+    padding: 3px 0px;
+    background-color: #d21bed;
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.white-back {
+    padding: 3px 0px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.dark-back {
+    background-color: #202226;
+}
+
+.old-price, .new-price {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.old-price {
+    color:#202226;
+    text-decoration: line-through;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.unlimitedOldPrice {
+    color: #ffffff;
+}
+
+.timetable-main, .faqs-main {
+    padding: 80px 250px;
+}
+
+.promo-card {
+    overflow: hidden;
+    width: 500px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.promo-image {
+    width: 500px;
+    filter: brightness(60%);
+    transition: all 0.5s ease-in-out;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.promo-about {
+    color: #ffffff;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+
+.form-feedback {
+    padding: 90px 5px 90px;
+    background-color: #ffffff;
+}
+
+.form-response {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.form {
+    padding: 80px 200px;
+    background-color: #ffffff;
+    color:#202020;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.input, .textarea {
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 1px solid #202020;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+
+.textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+.btn-margin {
+    margin: 20px 0px 10px;
+}
+
+.private-policy {
+    font-size: 14px;
+    font-weight: 200;
+    color: #202020;
+}
+
+.privacy-link {
+    color:#202020;
+    text-decoration: underline;
+}
+
+.privacy-link:hover {
+    color:#b507c4;
+}
+
+.privacy {
+    color:#202020;
+    padding: 90px 200px 70px;
+}
+
+.privacy-heading {
+    font-size: 42px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.subheading-policy {
+    margin: 30px 0px 10px;
+    font-size: 27px;
+}
+
+.form-response {
+    color:#202226;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 5;
+}
+
+.scroll-to-top button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    opacity: .7;
+}
+
+.scroll-to-top button:hover{
+    opacity: 1;
+}
+
+.topBtn-icon {
+    font-size: 50px;
+    color:#b507c4;
+}
+
+@media all and (max-width: 1300px) {
+    .timetable-main, .faqs-main, .form {
+        padding: 80px 60px;
+    }
+
+    .flex-around {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .center-btn {
+        align-self: center;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .detailedCoachInfo, .detailedClasses-heading {
+        padding: 0px 50px;
+    }
+
+    .form {
+        padding: 70px 50px;
+    }
+
+    .prices-container {
+        padding: 50px;
+    }
+
+    .shopItem-container {
+        padding: 120px 50px 50px;
+    }
+
+    .section, .privacy {
+        padding: 90px 50px;
+    }
+
+    .less {
+        padding: 0px 90px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .offer-heading {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 90px 40px;
+    }
+
+    h3 {
+        padding: 0px 80px;
+    }
+
+    .scrolling-text {
+        animation: scrolling 14s infinite normal linear;
+    }
+
+    .benefits {
+        padding: 50px 20px 90px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .gap {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .less {
+        padding: 0px 80px;
+    }
+
+    .detailedCoachInfo {
+        gap: 30px;
+        padding: 0px 30px;
+    }
+        
+    .center, .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form {
+        gap: 0px;
+    }
+
+    .input, .textarea {
+        width: 95%;
+    }
+
+    .bottom-margin {
+        margin-bottom: 30px;
+    }
+    
+    .detailedClasses-heading, .detailedItmes-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+    }
+
+    .detailedItmes-heading {
+        padding: 0;
+    }
+
+    .class-description {
+        padding: 0px 50px 30px;
+    }
+
+    .classes-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second {
+        margin: 120px 0px 20px;
+    }
+
+    .discount {
+        height: 30vh;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .filter-class {
+        margin: 10px 20px 50px;
+    } 
+
+    .detailedCoachInfo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 0px 20px;
+    }
+
+    .detailed-coach {
+        padding: 80px 0px 50px;
+    }
+
+    .detailedClass-cover {
+        height: fit-content;
+    }
+
+    .detailedClasses-heading {
+        padding: 80px 15px 0px;
+    }
+
+    .detailedClass-heading {
+        font-size: 45px;
+    }
+
+    .your-fit, .dash-icon {
+        font-size: 19px;
+    }
+
+    .dash-icon {
+        font-size: 23px;
+    }
+
+    .start {
+        gap: 30px;
+    }
+
+    .time {
+        font-size: 25px;
+        line-height: 1;
+    }
+    
+    .time-icon {
+        font-size: 40px;
+    }
+
+    .class-explanation {
+        font-size: 17px;
+    }
+
+    .detailedClassPhoto {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .class-description {
+        padding: 0px 15px 30px;
+    }
+
+    .horizontal-line {
+        margin: 35px 20px 20px;
+    }
+
+    .second {
+        margin: 0px;
+    }
+
+    .itemImage-detailed {
+        width: 300px;
+        height: 470px;
+    }
+
+    .shopItem-container, .privacy {
+        padding: 90px 30px 50px;
+    }
+
+    .prices-container, .form {
+        padding: 50px 20px;
+    }
+
+    .filtered-classes {
+        width: 110px;
+        height: 50px;
+        font-size: 14px; 
+    }
+}
+
+@media all and (max-width: 540px) {
+    .scroll-to-top {
+        right: 10px;
+        bottom: 20px;
+    }
+
+    .timetable-main, .faqs-main, section {
+        padding: 80px 15px;
+    }
+
+    .top-cover {
+        padding: 0px 20px;
+    }
+
+    h2  {
+        font-size: 22px;
+    }
+    
+    .outlined-words {
+        font-size: 24px;
+    }
+    
+    h1 {
+        font-size: 45px;
+        margin: 22px 0px 60px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .first-trial {
+        margin-top: 35px;
+    }
+
+    .cta {
+        min-height: 50px;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .benefits {
+        padding: 50px 10px 80px;
+    }
+
+    .benefit-icon {
+        font-size: 90px;
+        height: 90px;
+    }
+
+    .benefit {
+        height: 370px;
+    }
+
+    .scrolling-text {
+        font-size: 50px;
+        animation: scrolling 10s infinite normal linear;
+    }
+
+    .section-headings {
+        font-size: 40px;
+    }
+
+    .description, .offer-subheading {
+        font-size: 16px;
+    }
+
+    .less {
+        padding: 0px 30px;
+    }
+
+    .discount {
+        height: 40vh;
+    }
+
+    .morePadding {
+        padding: 0px 30px 30px;
+    }
+
+    .pink-back, .pink-back {
+        padding: 0px;
+    }
+}
+
+@media all and (max-width: 413px) {
+.coach-photo {
+    width: 220px;
+    height: 330px
+}
+
+.specialization {
+    font-size: 14px;
+}
+
+.coach-name, .directions {
+    font-size: 23px;
+}
+
+.directions {
+    font-size: 21px;
+}
+
+.aboutCoach-photo {
+    width: 280px;
+    height: 420px;
+}
+
+.moto {
+    top: 320px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.shopItem-container {
+    padding: 90px 20px 40px;
+}
+
+.cart {
+    width: 340px;
+}
+}
+
+@media all and (max-width: 344px) {
+    h2 {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    .outlined-words {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        margin: 20px 0px 60px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+
+    .cart {
+        width: 320px;
+    }
 }
