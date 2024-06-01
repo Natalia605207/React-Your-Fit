@@ -23,13 +23,13 @@ section {
 
 .top-cover {
     font-family: "Montserrat", sans-serif;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 0;
     width: 100%;
     min-height: 100vh;
 }
 
-video {
+.main-photo {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
