@@ -30,7 +30,7 @@ export const SideMenu = ({isMenuOpen, setIsMenuOpen, toggleMenu}) => {
           <li><Link to="/promos" onClick={toggleMenu} className='aside-link'>Promos</Link></li>
           <li><Link to="/shop" onClick={toggleMenu} className='aside-link'>Shop</Link></li>
           <li><Link to="/faqs" onClick={toggleMenu} className='aside-link'>FAQs</Link></li>
-          <li><HashLink smooth to="/#contact" onClick={toggleMenu} className='aside-link text-light'>Contacts</HashLink></li>
+          <li><HashLink smooth to="/#contact" onClick={toggleMenu} className='aside-link'>Contacts</HashLink></li>
         </ul>
         <SocialLinks />
         <button className="nav-btn">

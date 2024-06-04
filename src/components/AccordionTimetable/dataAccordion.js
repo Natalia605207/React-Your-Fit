@@ -2,147 +2,273 @@ export const dataAccordion = [
     {
       id: 1,
       title: "MONDAY",
-      classOne: "TRX",
-      time: "09:00 - 10:00",
-      classTwo: "TRX",
-      timeTwo: "10:00 - 11:00",
-      classThree: "Stretching",
-      timeThree: "12:00 - 13:00",
-      classFour: "Functional Training",
-      timeFour: "15:00 - 16:00",
-      classFive: "Tabata + MFR",
-      timeFive: "16:00 - 17:00",
-      classSix: "Yoga",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Pilates",
-      timeSeven: "19:00 - 20:00",
-      classEight: "AERO",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "09:00 - 10:00",
+        },
+        two: {
+          name: "TRX",
+          time: "10:00 - 11:00",
+        },
+        three: {
+          name: "Stretching",
+          time: "12:00 - 13:00",
+        },
+        four: {
+          name: "Functional Training",
+          time: "15:00 - 16:00",
+        },
+        five: {
+          name: "Tabata + MFR",
+          time: "16:00 - 17:00",
+        },
+        six: {
+          name: "Yoga",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Pilates",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "AERO",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 2,
       title: "TUESDAY",
-      classOne: "TRX",
-      time: "07:00 - 08:00",
-      classTwo: "TRX",
-      timeTwo: "09:00 - 10:00",
-      classThree: "Healthy back",
-      timeThree: "10:00 - 11:00",
-      classFour: "Hot yoga",
-      timeFour: "12:00 - 13:00",
-      classFive: "Tabata + MFR",
-      timeFive: "16:00 - 17:00",
-      classSix: "Hot stretching",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Pilates",
-      timeSeven: "19:00 - 20:00",
-      classEight: "Fit boxing",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "07:00 - 08:00",
+        },
+        two: {
+          name: "TRX",
+          time: "09:00 - 10:00",
+        },
+        three: {
+          name: "Healthy back",
+          time: "10:00 - 11:00",
+        },
+        four: {
+          name: "Hot yoga",
+          time: "12:00 - 13:00",
+        },
+        five: {
+          name: "Tabata + MFR",
+          time: "16:00 - 17:00",
+        },
+        six: {
+          name: "Hot stretching",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Pilates",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "Fit boxing",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 3,
       title: "WEDNESDAY",
-      classOne: "TRX",
-      time: "09:00 - 10:00",
-      classTwo: "AERO",
-      timeTwo: "10:00 - 11:00",
-      classThree: "Stretching",
-      timeThree: "12:00 - 13:00",
-      classFour: "Hot stretching",
-      timeFour: "13:00 - 14:00",
-      classFive: "Tabata + MFR",
-      timeFive: "16:00 - 17:00",
-      classSix: "Pilates",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Pilates",
-      timeSeven: "19:00 - 20:00",
-      classEight: "AERO",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "09:00 - 10:00",
+        },
+        two: {
+          name: "AERO",
+          time: "10:00 - 11:00",
+        },
+        three: {
+          name: "Stretching",
+          time: "12:00 - 13:00",
+        },
+        four: {
+          name: "Hot stretching",
+          time: "13:00 - 14:00",
+        },
+        five: {
+          name: "Tabata + MFR",
+          time: "16:00 - 17:00",
+        },
+        six: {
+          name: "Pilates",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Pilates",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "AERO",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 4,
       title: "THURSDAY",
-      classOne: "TRX",
-      time: "07:00 - 08:00",
-      classTwo: "TRX",
-      timeTwo: "08:00 - 09:00",
-      classThree: "Pilates",
-      timeThree: "09:00 - 10:00",
-      classFour: "Stretching",
-      timeFour: "11:00 - 12:00",
-      classFive: "Functional training",
-      timeFive: "14:00 - 15:00",
-      classSix: "Hot yoga",
-      timeSix: "16:00 - 17:00",
-      classSeven: "Tabata + MFR",
-      timeSeven: "19:00 - 20:00",
-      classEight: "Healthy back",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "07:00 - 08:00",
+        },
+        two: {
+          name: "TRX",
+          time: "08:00 - 09:00",
+        },
+        three: {
+          name: "Pilates",
+          time: "09:00 - 10:00",
+        },
+        four: {
+          name: "Stretching",
+          time: "11:00 - 12:00",
+        },
+        five: {
+          name: "Functional training",
+          time: "14:00 - 15:00",
+        },
+        six: {
+          name: "Hot yoga",
+          time: "16:00 - 17:00",
+        },
+        seven: {
+          name: "Tabata + MFR",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "Healthy back",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 5,
       title: "FRIDAY",
-      classOne: "TRX",
-      time: "10:00 - 11:00",
-      classTwo: "Stretching",
-      timeTwo: "11:00 - 12:00",
-      classThree: "Yoga",
-      timeThree: "12:00 - 13:00",
-      classFour: "Hot yoga",
-      timeFour: "15:00 - 16:00",
-      classFive: "Hot stretching",
-      timeFive: "16:00 - 17:00",
-      classSix: "AERO",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Pilates",
-      timeSeven: "19:00 - 20:00",
-      classEight: "Tabata + MFR",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "10:00 - 11:00",
+        },
+        two: {
+          name: "Stretching",
+          time: "11:00 - 12:00",
+        },
+        three: {
+          name: "Yoga",
+          time: "12:00 - 13:00",
+        },
+        four: {
+          name: "Hot yoga",
+          time: "15:00 - 16:00",
+        },
+        five: {
+          name: "Hot stretching",
+          time: "16:00 - 17:00",
+        },
+        six: {
+          name: "AERO",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Pilates",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "Tabata + MFR",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 6,
       title: "SATURDAY",
-      classOne: "TRX",
-      time: "10:00 - 11:00",
-      classTwo: "Yoga",
-      timeTwo: "11:00 - 12:00",
-      classThree: "Functional Training",
-      timeThree: "12:00 - 13:00",
-      classFour: "Stretching",
-      timeFour: "13:00 - 14:00",
-      classFive: "Pilates",
-      timeFive: "15:00 - 16:00",
-      classSix: "AERO",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Fot boxing",
-      timeSeven: "19:00 - 20:00",
-      classEight: "Hot yoga",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "TRX",
+          time: "10:00 - 11:00",
+        },
+        two: {
+          name: "Yoga",
+          time: "11:00 - 12:00",
+        },
+        three: {
+          name: "Functional Training",
+          time: "12:00 - 13:00",
+        },
+        four: {
+          name: "Stretching",
+          time: "13:00 - 14:00",
+        },
+        five: {
+          name: "Pilates",
+          time: "15:00 - 16:00",
+        },
+        six: {
+          name: "AERO",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Fit boxing",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "Hot yoga",
+          time: "20:00 - 21:00",
+        }
+      }
     },
 
     {
       id: 7,
       title: "SUNDAY",
-      classOne: "Yoga",
-      time: "10:00 - 11:00",
-      classTwo: "TRX",
-      timeTwo: "11:00 - 12:00",
-      classThree: "Stretching",
-      timeThree: "12:00 - 13:00",
-      classFour: "Healthy back",
-      timeFour: "13:00 - 14:00",
-      classFive: "Tabata + MFR",
-      timeFive: "16:00 - 17:00",
-      classSix: "Pilates",
-      timeSix: "18:00 - 19:00",
-      classSeven: "Functional training",
-      timeSeven: "19:00 - 20:00",
-      classEight: "AERO",
-      timeEight: "20:00 - 21:00"
+      classes: {
+        one: {
+          name: "Yoga",
+          time: "10:00 - 11:00",
+        },
+        two: {
+          name: "TRX",
+          time: "11:00 - 12:00",
+        },
+        three: {
+          name: "Stretching",
+          time: "12:00 - 13:00",
+        },
+        four: {
+          name: "Healthy back",
+          time: "13:00 - 14:00",
+        },
+        five: {
+          name: "Tabata + MFR",
+          time: "16:00 - 17:00",
+        },
+        six: {
+          name: "Pilates",
+          time: "18:00 - 19:00",
+        },
+        seven: {
+          name: "Functional training",
+          time: "19:00 - 20:00",
+        },
+        eight: {
+          name: "AERO",
+          time: "20:00 - 21:00",
+        }
+      }
     }
 ]

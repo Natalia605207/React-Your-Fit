@@ -58,7 +58,7 @@ export const dataCoaches = [
         experience: 3,
         education:"higher education in physical education at the Academy of Sport in London.",
         certificates: "stretching, hot-stretching, pilates, aero-stretching, TRX (TRX Training Center)",
-        phrase: "Your body will achieve what your mind will believe..",
+        phrase: "Your body will achieve what your mind will believe.",
         hoursTrained: 856,
         happyClients: 258,
         personalBests: 545,
