@@ -52,7 +52,7 @@ export const Classes = () => {
             <h4 className="white" ref={addtoRefs}>Best classes <span className="outlined">for you</span></h4>
             <p className="description" ref={addtoRefs}>More than <span className="pink">12 options</span> to choose! Effective training system developed by professionals. Enjoy fitness, stretching and yoga with us.</p>
             </div>
-        <ClassFilter filterClasses={filterClasses} />
+        <ClassFilter filterClasses={filterClasses} setClasses={setClasses} dataClasses={dataClasses} />
         <ClassesInfo classes={classes} />
         </section>
         <FeedbackForm />

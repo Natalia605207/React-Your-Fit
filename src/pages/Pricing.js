@@ -9,14 +9,16 @@ import { ScrollToTopBtn } from "../components/ScrollToTopBtn";
 
 export const Pricing = () => {
     return(
+        <div>
         <section className="pricing column">
             <Discount />
             <PriceAllClasses />
             <PriceUnlimited />
             <PricePersonal />
             <ScrollToTopBtn />
-            <FeedbackForm />
-            <Footer />
         </section>
+        <FeedbackForm />
+        <Footer />
+        </div>
     )
 }

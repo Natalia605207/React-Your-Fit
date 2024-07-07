@@ -49,7 +49,7 @@ export const Coaches = () => {
         <section className="column">
             <h4 className="black" ref={addtoRefs}>Team of <span className="outlined border-black">expert coaches</span></h4>
             <p className="description black" ref={addtoRefs}>We have a team of <span className="pink">in-house sport scientists</span> and head coaches. Our coaches individualize the workout for members, adapting the exercises on each round to suit your skills and fitness level.</p>
-        <Buttons filterCoaches={filterCoaches} />
+        <Buttons filterCoaches={filterCoaches} setCoaches={setCoaches} dataCoaches={dataCoaches} />
         <CoachesInfo coaches={coaches} />
         </section>
         </div>

@@ -1,9 +1,9 @@
 import '../../App.css';
 
-export const Buttons = ({filterCoaches}) => {
+export const Buttons = ({ filterCoaches, setCoaches, dataCoaches }) => {
   return (
     <div className="classesBtnGroup">
-    <button className="filtered-classes" onClick={() => window.location.reload(false)}>View All</button>
+    <button className="filtered-classes" onClick={() => setCoaches(dataCoaches)}>View All</button>
     <button className="filtered-classes" onClick={() => filterCoaches("yoga")}>Yoga</button>
     <button className="filtered-classes" onClick={() => filterCoaches("stretching")}>Stretching</button>
     <button className="filtered-classes" onClick={() => filterCoaches("trx")}>TRX</button>

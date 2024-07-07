@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { FaFilter } from "react-icons/fa";
 
 
-function ClassFilter({filterClasses}) {
+function ClassFilter({ filterClasses, setClasses, dataClasses }) {
   return (
     <Dropdown className="filter-class">
       <Dropdown.Toggle variant="light" id="dropdown-basic">
@@ -12,7 +12,7 @@ function ClassFilter({filterClasses}) {
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="dropdown-menu">
-        <Dropdown.Item as="button" className="dropdown-item" onClick={() => window.location.reload(false)}>View All</Dropdown.Item>
+        <Dropdown.Item as="button" className="dropdown-item" onClick={() => setClasses(dataClasses)}>View All</Dropdown.Item>
         <Dropdown.Item as="button" onClick={() => filterClasses("yoga")}>YOGA</Dropdown.Item>
         <Dropdown.Item as="button" onClick={() => filterClasses("stretching")}>STRETCHING</Dropdown.Item>
         <Dropdown.Item as="button" onClick={() => filterClasses("trx")}>TRX</Dropdown.Item>
