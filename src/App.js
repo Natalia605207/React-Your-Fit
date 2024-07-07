@@ -30,7 +30,7 @@ function App() {
   const [modalPromoOpen, setModalPromoOpen] = useState(false);
 
   useEffect(() => {
-    const modalTimer = setTimeout(() => setModalPromoOpen(true), 5000);
+    const modalTimer = setTimeout(() => setModalPromoOpen(true), 7000);
     return () => clearTimeout(modalTimer)
   }, [])
 

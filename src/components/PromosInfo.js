@@ -1,8 +1,24 @@
+import { React, useEffect, useRef } from 'react';
 import { dataPromos } from "./dataPromos";
+import { gsap } from "gsap"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export const PromosInfo = () => {
+    const ref = useRef();
+    useEffect(() => {
+        const el = ref.current;
+        gsap.fromTo(el, { y: 50, opacity: 0 }, {
+            y: 0, opacity: 1, duration: 0.7, scrollTrigger: {
+                trigger: el,
+                start: "top bottom-=70",
+                toggleActions: "play none none reverse"
+            }
+        })
+    }, [])
+
     return(
-        <div className="flex-around wrap gap">
+        <div className="flex-around wrap gap" ref={ref}>
             {dataPromos.map((element => {
                 const {id, image, name, description} = element;
                 return(

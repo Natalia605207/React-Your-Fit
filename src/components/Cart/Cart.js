@@ -25,7 +25,6 @@ const Cart = ({active, setActive}) => {
             <p className="total-price">Total: ${ totalPrice }</p>
             </div>
             <Stripe />
-
         </div>
     )
 }

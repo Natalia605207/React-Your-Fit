@@ -121,8 +121,8 @@ export const Footer = () => {
             </MDBContainer>
           </section>
     
-          <div className='text-center p-4 text-light' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-            © 2021 Copyright: YourFit.com
+          <div className='text-center p-4 text-light' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', fontSize: '15px' }}>
+          © 2024 YourFit. All rights reserved. Designed and developed by Natalia Musikhina
           </div>
         </MDBFooter>
         </div>

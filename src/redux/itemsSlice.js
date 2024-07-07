@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const itemsSlice = createSlice({
-    name: 'items',
+    name: 'garments',
     initialState: {
         selectedCategory: "ALL"
     },
@@ -13,6 +13,6 @@ export const itemsSlice = createSlice({
     }
 })
 
-export const getSelectedCategory = state => state.items.selectedCategory;
+export const getSelectedCategory = state => state.garments.selectedCategory;
 export const { filterCategory } = itemsSlice.actions;
 export default itemsSlice.reducer;

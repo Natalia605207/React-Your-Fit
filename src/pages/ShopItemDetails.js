@@ -1,7 +1,5 @@
-import React from 'react';
+import { React, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { dataShop } from "../components/dataShop";
 import "../App.css";
 import Tabs from "../components/Tabs/Tabs";
@@ -15,17 +13,16 @@ export const ShopItemDetails = () => {
     const navigate = useNavigate();
     const { title } = useParams();
     const [quantity, setQuantity] = useState(1);
-    const dispatch = useDispatch();
     const [activeTab, setActiveTab] = useState(0);
 
     return(
         <div>
         <section className="shopItem-container column">
-            {dataShop.filter(item => item.title === title).map((item) => {
-                const {id, image, price, name, description, fullDescription, fabric, careInstructions, season, sku } = item;
+            {dataShop.filter(garment => garment.title === title).map((garment) => {
+                const {id, image, price, name, description, fullDescription, fabric, careInstructions, season, sku } = garment;
                 return(
                     <div className="column-left black" key={id}>
-                        <ShopItemDetailsInfo image={image} name={name} price={price} description={description} quantity={quantity} setQuantity={setQuantity} dispatch={dispatch} item={item} />
+                        <ShopItemDetailsInfo image={image} name={name} price={price} description={description} quantity={quantity} setQuantity={setQuantity} garment={garment} />
                         <div className="item-tabs column-left">
                             <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
                             <hr className="hr-tabs" />
