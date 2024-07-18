@@ -71,7 +71,7 @@ const addtoRefs = (el) => {
       <button className="cta" type="submit" disabled={state.submitting}>Submit</button>
       </div>
       <div>
-      <Checkbox {...label} defaultChecked color="secondary" />
+      <Checkbox {...label} color="secondary" />
         <span className="private-policy">By clicking the "Submit" button, you automatically agree to the <Link to="/privacy"><span className="privacy-link">Privacy Policy</span></Link></span>
       </div>
     </form>
