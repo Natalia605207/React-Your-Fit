@@ -109,7 +109,7 @@ export const Footer = () => {
                   </p>
                   <p>
                     <MDBIcon icon="phone" className="me-3" /> 
-                    <a href='tel:+79168391700 + 01 234 567 88' className='text-reset text-decoration-none'>
+                    <a href='tel:+79168391700' className='text-reset text-decoration-none'>
                     + 01 234 567 88
                     </a>
                   </p>
