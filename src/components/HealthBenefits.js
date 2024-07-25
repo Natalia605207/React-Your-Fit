@@ -34,30 +34,30 @@ export const HealthBenefits = () => {
             <section className="health-benefits">
                 <div className="column flex-one" ref={addtoRefs}>
                     <div className="benefits-flexAround">
-                <a className="benefits-button" data-tooltip-id="point-one" data-tooltip-content="Boost energy">
+                <div className="benefits-button" data-tooltip-id="point-one" data-tooltip-content="Boost energy">
                 <AiFillPlusCircle />
-                </a>
-                <a className="benefits-button" data-tooltip-id="point-two" data-tooltip-content="Improve cardiovascular health">
+                </div>
+                <div className="benefits-button" data-tooltip-id="point-two" data-tooltip-content="Improve cardiovascular health">
                 <AiFillPlusCircle />
-                </a>
-                <a className="benefits-button" data-tooltip-id="point-three" data-tooltip-content="Improve sleep">
+                </div>
+                <div className="benefits-button" data-tooltip-id="point-three" data-tooltip-content="Improve sleep">
                 <AiFillPlusCircle />
-                </a>
+                </div>
                 <Tooltip id="point-one" clickable />
                 <Tooltip id="point-two" clickable />
                 <Tooltip id="point-three" clickable />
                 </div>
                 <img src={woman} alt="woman" className="woman-photo" />
                 <div className="benefits-flexAround">
-                <a className="benefits-button" data-tooltip-id="point-four" data-tooltip-content="Strong muscles" data-tooltip-place="bottom">
+                <div className="benefits-button" data-tooltip-id="point-four" data-tooltip-content="Strong muscles" data-tooltip-place="bottom">
                 <AiFillPlusCircle />
-                </a>
-                <a className="benefits-button" data-tooltip-id="point-five" data-tooltip-content="Lower blood pressure" data-tooltip-place="bottom">
+                </div>
+                <div className="benefits-button" data-tooltip-id="point-five" data-tooltip-content="Lower blood pressure" data-tooltip-place="bottom">
                 <AiFillPlusCircle />
-                </a>
-                <a className="benefits-button" data-tooltip-id="point-six" data-tooltip-content="Weight loss" data-tooltip-place="bottom">
+                </div>
+                <div className="benefits-button" data-tooltip-id="point-six" data-tooltip-content="Weight loss" data-tooltip-place="bottom">
                 <AiFillPlusCircle />
-                </a>
+                </div>
                 <Tooltip id="point-four" clickable  />
                 <Tooltip id="point-five" clickable />
                 <Tooltip id="point-six" clickable />
