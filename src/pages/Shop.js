@@ -1,5 +1,5 @@
 import { React, useEffect, useRef } from "react";
-import Items from "../components/ItemsComponent/Items";
+import Garments from "../components/ItemsComponent/Garments";
 import AllCategories from "../components/Filter/AllCategories";
 import "../App.css";
 import { Footer } from "../components/Footer";
@@ -44,7 +44,7 @@ export const Shop = () => {
             <p className="description black" ref={addtoRefs}>We offer you only <span className="pink">necessary and high-quality</span> items for your workouts! They will help you to reach the desired results. Enjoy our workouts with items that are designed for sport.</p>
             </div>
             <AllCategories />
-            <Items />
+            <Garments />
         </section>
         <ScrollToTopBtn />
         <Footer />

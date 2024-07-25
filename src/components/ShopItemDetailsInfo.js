@@ -1,7 +1,7 @@
 import { React, useEffect, useRef } from "react";
 import ChangeQuantity from "../components/Cart/ChangeQuantity";
 import { useDispatch, useSelector } from "react-redux";
-import { addItemToCart, getCartItems, updateQuantity } from "../redux/cartSlice";
+import { addItemToCart, incrementCartItemQuantity, getCartItems } from "../redux/cartSlice";
 import { TbShoppingBagPlus } from "react-icons/tb";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,11 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 export const ShopItemDetailsInfo = ({ image, name, price, description, quantity, setQuantity, garment }) => {
     const dispatch = useDispatch();
     const cartItems = useSelector(getCartItems);
-    const itemInCart = cartItems.some(item => item.id === garment.id);
+    const garmentInCart = cartItems.some(cartItem => cartItem.garmentId === garment.id);
 
     const handleClick = () => {
-        itemInCart
-        ? dispatch(updateQuantity({garment, quantity}))
+        garmentInCart
+        ? dispatch(incrementCartItemQuantity({
+            garmentId: garment.id,
+            quantity,
+            })
+          )
         : dispatch(addItemToCart({garment, quantity}))
     }
 

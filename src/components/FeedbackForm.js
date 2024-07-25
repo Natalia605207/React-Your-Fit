@@ -1,37 +1,13 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from "gsap"; 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { ValidationError, useForm } from '@formspree/react';
 import * as React from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import "../App.css";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Fade } from "react-awesome-reveal";
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export const FeedbackForm = () => {
-  const ref = useRef([]);
-  ref.current = [];
-
-  useEffect(() => {
-    ref.current.forEach((el) => {
-        gsap.fromTo(el, { y: 50, opacity: 0 }, {
-            y: 0, opacity: 1, duration: 0.7, scrollTrigger: {
-                trigger: el,
-                start: "top bottom-=70",
-                toggleActions: "play none none reverse"
-            }
-        })
-    })
-}, [])
-
-const addtoRefs = (el) => {
-    if (el && !ref.current.includes(el)) {
-        ref.current.push(el);
-    }
-}
 
   const [state, handleSubmit] = useForm("xeqybqbw");
   if (state.succeeded) {
@@ -43,11 +19,12 @@ const addtoRefs = (el) => {
 
   return (
     <section className="form">
+        <Fade direction="up" duration="2000">
         <div className="column-center center">
-        <h4 className="black" ref={addtoRefs}>Feel free <span className="outlined border-black">to ask us</span></h4>
-        <p className="description black bottom-margin" ref={addtoRefs}>Please, <span className="pink">fill in the form</span>. Our manager will contact you soon.</p>
+        <h4 className="black">Feel free <span className="outlined border-black">to ask us</span></h4>
+        <p className="description black bottom-margin">Please, <span className="pink">fill in the form</span>. Our manager will contact you soon.</p>
         </div>
-        <form method="POST" onSubmit={handleSubmit} ref={addtoRefs}>
+        <form method="POST" onSubmit={handleSubmit}>
       <div className="form-block">
       <input className="input" placeholder="Your name" id="name" type="text" name="name" required />
       <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -75,6 +52,7 @@ const addtoRefs = (el) => {
         <span className="private-policy">By clicking the "Submit" button, you automatically agree to the <Link to="/privacy"><span className="privacy-link">Privacy Policy</span></Link></span>
       </div>
     </form>
+    </Fade>
     </section>
   )
 }

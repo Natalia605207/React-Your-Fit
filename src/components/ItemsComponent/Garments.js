@@ -1,13 +1,13 @@
 import { React, useEffect, useRef } from 'react';
 import { dataShop } from "../dataShop";
-import Item from "./Item";
+import Garment from "./Garment";
 import { useSelector } from "react-redux";
-import { getSelectedCategory } from "../../redux/itemsSlice";
+import { getSelectedCategory } from "../../redux/garmentsSlice";
 import { gsap } from "gsap"; 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const Items = () => {
+const Garments = () => {
     const selectedCategory = useSelector(getSelectedCategory);
 
     const ref = useRef();
@@ -30,10 +30,10 @@ const Items = () => {
                 return selectedCategory === garment.category
             })
             .map(garment =>
-                <Item garment={garment} key={garment.id} />
+                <Garment garment={garment} key={garment.id} />
             )}
         </div>
     )
 }
 
-export default Items;
+export default Garments;

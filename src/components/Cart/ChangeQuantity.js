@@ -1,7 +1,6 @@
 import { PiPlusLight } from "react-icons/pi";
 import { PiMinusLight } from "react-icons/pi";
 
-
 const ChangeQuantity = ({quantity, setQuantity}) => {
     const addQuantity = () => {
         const newQuantity = quantity + 1;
@@ -14,11 +13,13 @@ const ChangeQuantity = ({quantity, setQuantity}) => {
         setQuantity(newQuantity)
     }
 
-    return(<div className="addedItems">
+    return(
+    <div className="addedItems">
         <button className="addDeleteBtn" onClick={removeQuantity}><PiMinusLight className="minus"/></button>
         <span className="addedQuantity">{quantity}</span>
         <button className="addDeleteBtn" onClick={addQuantity}><PiPlusLight /></button>
-    </div>)
+    </div>
+    )
 }
 
 export default ChangeQuantity;

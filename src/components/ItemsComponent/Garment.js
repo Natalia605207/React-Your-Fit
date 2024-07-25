@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Item = ({garment}) => {
+const Garment = ({garment}) => {
     return(
         <div className="column item">
             <Link to={`/shop/${garment.title}`}>
@@ -12,4 +12,4 @@ const Item = ({garment}) => {
     )
 }
 
-export default Item;
+export default Garment;
