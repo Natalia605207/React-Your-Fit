@@ -31,8 +31,7 @@ export const HealthBenefits = () => {
     }
 
     return(
-        <div>
-            <div className="health-benefits">
+            <section className="health-benefits">
                 <div className="column flex-one" ref={addtoRefs}>
                     <div className="benefits-flexAround">
                 <a className="benefits-button" data-tooltip-id="point-one" data-tooltip-content="Boost energy">
@@ -68,7 +67,6 @@ export const HealthBenefits = () => {
                 <h4 className="black">Health <span className="outlined border-black">Benefits</span></h4>
                 <p className="description black">Our exercises give <span className="pink">a strong positive impact</span> on your body. Join us today for better tomorrow.</p>
                 </div>
-            </div>
-        </div>
+            </section>
     )
 }
