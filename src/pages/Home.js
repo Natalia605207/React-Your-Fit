@@ -1,4 +1,5 @@
 import { Benefits } from "../components/Benefits";
+import Reviews from "../components/ClientsReviews/Reviews";
 import { FeedbackForm } from "../components/FeedbackForm";
 import { Footer } from "../components/Footer";
 import { FrontPage } from "../components/FrontPage";
@@ -22,6 +23,7 @@ export const Home = () => {
             <HomePageCoaches />
             <SpecialOffer />
             <HealthBenefits />
+            <Reviews />
             <ScrollingAnnouncement />
             <div id="form">
             <FeedbackForm />

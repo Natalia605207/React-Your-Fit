@@ -99,7 +99,7 @@ h3 {
     padding: 50px 90px 90px;
 }
 
-.homePageClasses, .all-classes, .timetable, .faqs {
+.homePageClasses, .all-classes, .timetable, .faqs, .reviews {
     background-color: #202020;
 }
 
@@ -126,7 +126,7 @@ h3 {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 0;;
+    margin-bottom: 0;
 }
 
 .upper {
@@ -1167,7 +1167,7 @@ h4 {
     opacity: 1;
 }
 
-.topBtn-icon {
+.topBtn-icon, .benefits-button {
     font-size: 50px;
     color:#b507c4;
 }
@@ -1178,11 +1178,6 @@ h4 {
 
 .flex-one {
     flex:1;
-}
-
-.benefits-button {
-    font-size: 50px;
-    color:#b507c4;
 }
 
 .benefits-button:hover {
@@ -1202,6 +1197,31 @@ h4 {
     top: 50px;
 }
 
+.bottom-padding {
+    padding-bottom: 20px;
+}
+
+.reviews {
+    min-height: 70vh;
+}
+
+.carousel-root {
+    width: 98%;
+    margin: 30px 0px;
+}
+
+.carousel .slider-wrapper {
+    width: 80% !important; 
+}
+
+.carousel.carousel-slider {
+    width: 80%;
+}
+
+.reviewer-name {
+    font-size: 25px;
+    font-weight: 600;
+}
 
 @media all and (max-width: 1300px) {
     .timetable-main, .faqs-main, .form, .health-benefits {
