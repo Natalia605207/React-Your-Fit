@@ -33,7 +33,7 @@ export const HealthBenefits = () => {
     return(
             <section className="health-benefits">
                 <div className="column flex-one" ref={addtoRefs}>
-                    <div className="benefits-flexAround">
+                <div className="benefits-flexAround">
                 <div className="benefits-button" data-tooltip-id="point-one" data-tooltip-content="Boost energy">
                 <AiFillPlusCircle />
                 </div>

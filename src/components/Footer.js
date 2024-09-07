@@ -122,7 +122,7 @@ export const Footer = () => {
           </section>
     
           <div className='text-center p-4 text-light' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', fontSize: '15px' }}>
-          © 2024 YourFit. All rights reserved. Designed and developed by Natalia Musikhina
+          © 2024 YourFit. All rights reserved. Designed and developed by <a href="https://natalia-webdev.com/" target="_blank" rel="noreferrer" className="portfolio-link">Natalia Musikhina</a>
           </div>
         </MDBFooter>
         </div>

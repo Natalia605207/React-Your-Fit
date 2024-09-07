@@ -1223,6 +1223,16 @@ h4 {
     font-weight: 600;
 }
 
+.portfolio-link {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.portfolio-link:hover {
+    color:#d21bed;
+    text-decoration: underline;
+}
+
 @media all and (max-width: 1300px) {
     .timetable-main, .faqs-main, .form, .health-benefits {
         padding: 80px 60px;
